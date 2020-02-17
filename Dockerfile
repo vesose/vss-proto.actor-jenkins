@@ -1,5 +1,5 @@
 FROM golang:alpine
-ARG GOLANGCI_LINT_VERSION=1.23.1
+ARG GOLANGCI_LINT_VERSION=1.23.6
 RUN adduser -u 1000 -D jenkins && \
   wget -O - -q https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh \
   | ash -s v$GOLANGCI_LINT_VERSION && \
